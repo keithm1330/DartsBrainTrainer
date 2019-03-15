@@ -1,0 +1,45 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>Darts Brain Trainer</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="MobileOptimized" content="512" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="robots" content="noindex,nofollow" />
+<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<div id="scoreholder">
+		<table>
+			<tr>
+				<th>You Require</th>
+				<th><span id="targetScore"></span></th>
+				<th>Streak</th>
+				<th><span id="streak">0</span></th>
+			</tr>
+			<tr>
+				<th>Remaining</th>
+				<th><span id="left"></span></th>
+				<th>High Score</th>
+				<th><span id="highscore">0</span></th>
+			</tr>
+
+		</table>
+	</div>
+	<div id="BoardHolder">
+		<div id="canvas_wrap"></div>
+		<div id="area"></div>
+		<div id="tutorial" onclick="closeTutorial()"></div>
+	</div>
+	<script src="js/zepto.js"></script>
+	<script src="js/pixi.js"></script>
+	<script src="js/Charm.js"></script>
+	<script src="js/main.js"></script>
+</body>
